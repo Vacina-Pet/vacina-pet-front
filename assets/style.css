@@ -1,0 +1,26 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --principal-blue: rgba(87, 113, 255, 1);
+    --principal-yelow: rgba(255, 213, 79, 1);
+    --very-dark-blue: hsl(229, 57%, 11%);
+    --principal-default:rgba(242, 242, 242, 1);
+
+    background-color: var(--principal-yelow);
+    height: 100%;
+    display: flex;
+}
+
+body {
+    background-color: var(--principal-blue);
+    min-height: 90%;
+    width: 80%;
+    margin: 4em auto;
+    padding: 2em;
+    border-radius: 1em;
+    
+}
+
+h1{
+    text-shadow: 1px 1px 3px var(--very-dark-blue);
+}
+
