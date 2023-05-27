@@ -1,21 +1,3 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;800&family=Inter&display=swap");
-
-ul{
-   list-style-type: none;
-}
-
-li{
-    background-color: var(--principal-default);
-    padding: 1em;
-    margin: 1em;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px var(--very-dark-blue);;
-    
-}
-
-
-
 .icons-voltar {
     position: absolute;
     width: 37px;
@@ -43,7 +25,7 @@ li{
     justify-content: center;
 }
 
-.foto { 
+.foto {
     width: 100px;
     height: 100px;
     background-color: #ffffff;
@@ -91,22 +73,7 @@ li{
     justify-content: center;
 }
 
-.menu {
-    display: flex;
-    justify-content: right;
-    padding: 0;
-  }
-  
-  .header-list {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-  }
-  
-  h1 {
+h1 {
     font-family: "Abhaya Libre", serif;
     font-weight: 800;
     display: flex;
@@ -114,35 +81,7 @@ li{
     justify-content: center;
     margin-top: 63px;
     width: auto;
-  }
-  
-  .container {
-    display: flex;
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    border: 0.5px solid #8c6f4a;
-    width: 80%;
-    height: 10%;
-    padding: 20px;
-    margin-bottom: 12px;
-    margin-left: 60px;
-  }
-  
-  .lista {
-    display: flex;
-  }
-  
-  .avatar {
-    margin-right: 20px;
-  }
-  
-  .pet-btn {
-    background-color: none;
-    border: none;
-  }
-
-
-
+}
 
 .icons-voltar {
     position: absolute;
@@ -171,7 +110,7 @@ li{
     justify-content: center;
 }
 
-.foto { 
+.foto {
     width: 100px;
     height: 100px;
     background-color: #ffffff;
@@ -218,5 +157,3 @@ li{
     display: flex;
     justify-content: center;
 }
-
-
