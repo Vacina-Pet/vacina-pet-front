@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,18 +11,36 @@
 </head>
 
 <body>
-    <a href="../index.html">Voltar</a>
-    <h1>Novo Pet</h1>
+    <main>
+        <div>
+            <a class="icons-voltar" href="../index.html"> <img class="img" src="../assets/img/seta-esquerda.png"
+                    alt=""></a>
+        </div>
 
-    <hr>
+        <h1 class="title">Novo Pet</h1>
+        <div class="div-foto">
+            <div class="foto">
+                Foto
+            </div>
+        </div>
 
-    <form action="" method="post">
-        <span>Nome:</span>
-        <input type="text" name="" id="pet-name" placeholder="Nome do pet">
-        <span>Raça/Espécie:</span>
-        <input type="text" name="" id="pet-name" placeholder="Raça e ou Espécie">
-        <input type="submit" value="Cadastrar">
-    </form>
+        <form class="form" action="../index.html" method="">
+            <label for="pet-name"><strong>Nome</strong> </label>
+            <input class="input-text" type="text" name="" id="pet-name" placeholder="Digite">
+            <label for="data-nasc"><strong>Data de Nascimento</strong> </label>
+            <input class="input-text" type="date" name="" id="data-nasc" placeholder="dia/mês/ano">
+            <label for="raca"><strong>Raça</strong> </label>
+            <input class="input-text" type="text" name="" id="pet-name" placeholder="Digite">
+            <label for="especie"><strong>Espécie</strong> </label>
+            <input class="input-text" type="text" name="" id="especie" placeholder="Digite">
+            <label for="img"><strong>Foto do Pet</strong></label>
+            <input type="file" name="img" id="img">
+            <div class="div-btn">
+               <input class="btn" type="submit" value="Cadastrar">
+            </div>
+
+        </form>
+    </main>
 </body>
 
 </html>
