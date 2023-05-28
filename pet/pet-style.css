@@ -34,7 +34,6 @@
     justify-content: center;
     align-items: center;
     color: rgb(134, 134, 134);
-
 }
 
 .form {
@@ -50,7 +49,6 @@
     border-bottom: 1px solid black;
     margin-bottom: 40px;
     padding: 5px;
-
 }
 
 ::-webkit-input-placeholder {
@@ -58,7 +56,7 @@
     font-weight: bold;
 }
 
-.btn {
+ .btn-create {
     width: 200px;
     height: 40px;
     border-radius: 20px;
@@ -68,10 +66,11 @@
     font-size: 18px;
 }
 
+
 .div-btn {
     display: flex;
     justify-content: center;
-}
+} 
 
 h1 {
     font-family: "Abhaya Libre", serif;
@@ -143,27 +142,7 @@ h1 {
     font-weight: bold;
 }
 
-.btn {
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: rgba(255, 213, 79, 1);
-    font-weight: bolder;
-    font-size: 18px;
-}
-
-.div-btn {
-    display: flex;
-    justify-content: center;
-}
-
-.pet-profile{
-
-}
-
-.pet-profile img{
+.pet-profile img {
     width: 100px;
     height: 100px;
-    border-radius: 8em;
 }
