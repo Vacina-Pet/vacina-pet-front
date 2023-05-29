@@ -10,56 +10,94 @@
     <link rel="stylesheet" href="pet-style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
-<body class="bg-blue">
-    
-    <main>
-        <div>
-            <a class="icons-voltar" href="../index.html"> <img class="img" src="../assets/img/seta-esquerda.png"
-                    alt=""></a>
-        </div>
-
-        <h1 class="title">Novo Pet</h1>
-        <div class="div-foto">
-            <div class="foto">
-                Foto
+<body class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Vacina Pet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Meus Pets</a>
+                    <a class="nav-item nav-link" href="#">Cadastrar Pet</a>
+                </div>
             </div>
-        </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center"><span class="badge bg-primary ">Cadastre seu Pet</span></h1>
+        <div class="d-flex justify-content-center mt-5 mb-5">
+            <form class="col-md-4">
+                <div class="d-flex justify-content-center">
+                    <img style="width: 75px;" src="../assets/img/camera.png" class="img-thumbnail " alt="...">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Nome*</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nome do Pet">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Espécie*</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Espécie do pet">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Sexo</label> <br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Macho</option>
+                        <option value="2">Fêmea</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Raça</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Raça do Pet">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Porte</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Pequeno (5 a 10kg)</option>
+                        <option value="2">Médio (10 a 25kg)</option>
+                        <option value="3">Grande (25 a 45kg)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Peso</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Peso do Pet">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="formGroupExampleInput2"
+                        placeholder="Data de nascimento do Pet">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Foto</label>
+                    <input type="file" class="form-control" id="formGroupExampleInput2" placeholder="Foto do Pet">
+                </div>
 
-        <div class="col-md-12">
-            <form class="form" action="../index.html" method="">
-                <label for="pet-name"><strong>Nome</strong> </label>
-                <input class="input-text" type="text" name="" id="pet-name" placeholder="Digite">
-                <label for="data-nasc"><strong>Data de Nascimento</strong> </label>
-                <input class="input-text" type="date" name="" id="data-nasc" placeholder="dia/mês/ano">
-                <label for="raca"><strong>Raça</strong> </label>
-                <input class="input-text" type="text" name="" id="pet-name" placeholder="Digite">
-                <label for="especie"><strong>Espécie</strong> </label>
-                <input class="input-text" type="text" name="" id="especie" placeholder="Digite">
-                <label for="img"><strong>Foto do Pet</strong></label>
-                <input type="file" name="img" id="img">
-                <div class="div-btn">
-                   <input class="btn" type="submit" value="Cadastrar">
+                <div class="form-group d-flex justify-content-center">
+                    <button class="btn btn-primary">Salvar</button>
                 </div>
             </form>
         </div>
-
-
-        <div>
-            <img class="bg-img" src="../assets/img/pata-de-cachorro.png" alt="">
-        </div>
     </main>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
