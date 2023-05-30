@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vacina Pet - Detalhes do Pet</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="pet-style.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,43 +15,60 @@
 <body class="container">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Vacina Pet</a>
+            <a class="navbar-brand" href="../index.html">Vacina Pet</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Meus Pets</a>
-                    <a class="nav-item nav-link" href="#">Cadastrar Pet</a>
+                    <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="./pet-list.html">Meus Pets</a>
+                    <a class="nav-item nav-link" href="./pet-create.html">Cadastrar Pet</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <h1>Meu Pet</h1>
+    <hr />
 
     <div class="media pet-profile ">
-        <img class="mr-4 rounded-circle col-2" src="../assets/img/foto-benny-bg.jpg" alt="">
+        <img class="mr-4 rounded-circle " src="../assets/img/foto-benny-bg.jpg" alt="" width="70px" height="70px">
         <div class="media-body">
             <h2>Benny</h2>
             <h5>Cachorro</h5>
         </div>
     </div>
 
-    <hr>
 
-    <div class="row">
+    <main class="card-columns">
 
-        <div class="card-deck col">
-        <div class="card col-3" style="width: 18rem;">
+        <div class="card shadow">
             <div class="card-body">
                 <h5 class="card-title">Raiva</h5>
                 <h6>Pfizer</h6>
                 <h6>Próxima data: 07/05/2023</h6>
                 <h6>Última data: 07/05/2022</h6>
-                <div class="float-right">
+                <div class="text-right">
+                    <a type="button" class="btn btn-outline-danger btn-sm" href="http://">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-warning btn-sm" href="http://">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-title">Raiva</h5>
+                <h6>Pfizer</h6>
+                <h6>Próxima data: 07/05/2023</h6>
+                <h6>Última data: 07/05/2022</h6>
+                <div class="text-right">
                     <a type="button" class="btn btn-outline-danger btn-sm" href="http://">
                         <i class="fa-regular fa-trash-can"></i>
                     </a>
@@ -65,32 +81,64 @@
         </div>
 
 
-            <div class="card col-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Raiva</h5>
-                    <h6>Pfizer</h6>
-                    <h6>Próxima data: 07/05/2023</h6>
-                    <h6>Última data: 07/05/2022</h6>
-                    <div class="float-right">
-                        <a type="button" class="btn btn-outline-danger btn-sm" href="http://">
-                            <i class="fa-regular fa-trash-can"></i>
-                        </a>
-                        <a type="button" class="btn btn-outline-warning btn-sm" href="http://">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </a>
-    
-                    </div>
-                </div>
-            </div>
-    
-
-        <div class="card col-3" style="width: 18rem;">
+        <div class="card shadow">
             <div class="card-body">
                 <h5 class="card-title">Raiva</h5>
                 <h6>Pfizer</h6>
                 <h6>Próxima data: 07/05/2023</h6>
                 <h6>Última data: 07/05/2022</h6>
-                <div class="float-right">
+                <div class="text-right">
+                    <a type="button" class="btn btn-outline-danger btn-sm" href="http://">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-warning btn-sm" href="http://">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-title">Raiva</h5>
+                <h6>Pfizer</h6>
+                <h6>Próxima data: 07/05/2023</h6>
+                <h6>Última data: 07/05/2022</h6>
+                <div class="text-right">
+                    <a type="button" class="btn btn-outline-danger btn-sm" href="http://">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-warning btn-sm" href="http://">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-title">Raiva</h5>
+                <h6>Pfizer</h6>
+                <h6>Próxima data: 07/05/2023</h6>
+                <h6>Última data: 07/05/2022</h6>
+                <div class="text-right">
+                    <a type="button" class="btn btn-outline-danger btn-sm" href="http://">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-warning btn-sm" href="http://">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-title">Raiva</h5>
+                <h6>Pfizer</h6>
+                <h6>Próxima data: 07/05/2023</h6>
+                <h6>Última data: 07/05/2022</h6>
+                <div class="text-right">
                     <a type="button" class="btn btn-outline-danger btn-sm" href="http://">
                         <i class="fa-regular fa-trash-can"></i>
                     </a>
@@ -102,9 +150,8 @@
             </div>
         </div>
 
-        </div>
-        </div>
 
+    </main>
 
     <footer></footer>
 
