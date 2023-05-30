@@ -2,38 +2,160 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus pets</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="pet-style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus pets</title>
+
+  <link rel="stylesheet" href="./pet-style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
-<body class=" bg-blue">
-    <main>
-        <div>
-            <a class="icons-voltar" href="../index.html"> <img class="img" src="../assets/img/seta-esquerda.png"
-                    alt=""></a>
-        </div>
-
-        <h1 class="title">Meus pets</h1>
-
-        <h2 class="foto"></h2>
-        <h3 class="foto"></h3>
-        <h4 class="foto"></h4>
-        <h5 class="foto"></h5>
-
-
-        <menu>
-            <div class="form">
-
-
-
-                <div>
-                    <img class="bg-img" src="../assets/img/pata-de-cachorro.png" alt="">
+<body class="container">
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">Vacina Pet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="./pet-list.html">Meus Pets</a>
+                    <a class="nav-item nav-link active" href="./pet-create.html">Cadastrar Pet</a>
                 </div>
+            </div>
+        </nav>
+    </header>
 
+  <h1>Meus Pets</h1>
+  <hr />
+
+  <main class="card-columns">
+
+    <div class="card shadow ">
+      <a class="card-link" href="./pet-detail.html">
+        <img class="card-img-top" src="../assets/img/foto-benny-bg.jpg"  height="350em" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">Benny</h5>
+          <div class="text-right">
+            <a type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@benny" href="#">
+              <i class="fa-regular fa-trash-can"></i>
+            </a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="./pet-edit.html">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="card shadow ">
+      <a class="card-link" href="./pet-detail.html">
+        <img class="card-img-top" src="../assets/img/Alaska.jpeg" height="350em" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">Alaska</h5>
+          <div class="text-right">
+            <a type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@alaska" href="#">
+              <i class="fa-regular fa-trash-can"></i>
+            </a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="./pet-edit.html">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card shadow ">
+      <a class="card-link" href="./pet-detail.html">
+        <img class="card-img-top" src="../assets/img/foto-antonioB.jpg" height="350em" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">Antônio</h5>
+          <div class="text-right">
+            <a type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@antonio" href="#">
+              <i class="fa-regular fa-trash-can"></i>
+            </a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="./pet-edit.html">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card shadow ">
+      <a class="card-link" href="./pet-detail.html">
+        <img class="card-img-top" src="../assets/img/Antônio.jpeg" height="350em" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">Antonio Budweiser</h5>
+          <div class="text-right">
+            <a type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@antonioB" href="#">
+              <i class="fa-regular fa-trash-can"></i>
+            </a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="./pet-edit.html">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card shadow ">
+      <a class="card-link" href="./pet-detail.html">
+        <img class="card-img-top" src="../assets/img/Lili.jpeg" height="350em" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">Lili</h5>
+          <div class="text-right">
+            <a type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@lili" href="#">
+              <i class="fa-regular fa-trash-can"></i>
+            </a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="./pet-edit.html">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </main>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Excluir perfil</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">Deseja excluir perfil do Pet?</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Sim</button>
+          <button type="button" class="btn btn-primary">Não</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
