@@ -16,26 +16,26 @@
 <body class="container">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Vacina Pet</a>
+            <a class="navbar-brand" href="../index.html">Vacina Pet</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Meus Pets</a>
-                    <a class="nav-item nav-link" href="#">Cadastrar Pet</a>
+                    <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="./pet-list.html">Meus Pets</a>
+                    <a class="nav-item nav-link active" href="./pet-create.html">Cadastrar Pet</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <h1 class="text-center"><span class="badge bg-primary ">Cadastre seu Pet</span></h1>
+        <h1 class="text-center"><span class="badge bg-primary ">Editar Pet</span></h1>
         <div class="d-flex justify-content-center mt-5 mb-5">
             <form class="col-md-4">
-                <div class="d-flex justify-content-center">
-                    <img style="width: 75px;" src="../assets/img/foto-benny.png" class="img-thumbnail " alt="...">
+                <div class="d-flex justify-content-center ">
+                    <img src="../assets/img/foto-benny.png" class="w-25 border border-1 border-dark rounded-circle" alt="...">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Nome*</label>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput">Espécie*</label>
-                    <input type="text" value="Cachorro" class="form-control" id="formGroupExampleInput" placeholder="Espécie do pet">
+                    <input type="text" value="Canina" class="form-control" id="formGroupExampleInput" placeholder="Espécie do pet">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Sexo</label> <br>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Raça</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Raça do Pet">
+                    <input type="text" value="Spitz Alemão" class="form-control" id="formGroupExampleInput2" placeholder="Raça do Pet">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Porte</label>
@@ -66,11 +66,11 @@
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Peso</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Peso do Pet">
+                    <input type="text" value="4.5kg" class="form-control" id="formGroupExampleInput2" placeholder="Peso do Pet">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Data de Nascimento</label>
-                    <input type="date" class="form-control" id="formGroupExampleInput2"
+                    <input type="date" value="2021-04-06" class="form-control" id="formGroupExampleInput2"
                         placeholder="Data de nascimento do Pet">
                 </div>
                 <div class="form-group">
