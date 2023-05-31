@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacina Pet - Novo Pet</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="pet-style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 
 <body class="container">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 m-1">
             <a class="navbar-brand" href="../index.html">Vacina Pet</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="./pet-list.html">Meus Pets</a>
-                    <a class="nav-item nav-link active" href="./pet-create.html">Cadastrar Pet</a>
+                    <a class="nav-item nav-link active" href="./pet-list.html">Meus Pets</a>
                 </div>
             </div>
         </nav>
@@ -33,32 +32,70 @@
     <main>
         <h1 class="text-center"><span class="badge bg-primary ">Cadastre seu Pet</span></h1>
         <div class="d-flex justify-content-center mt-5 mb-5">
-            <form class="col-md-4">
+            <form class="row col-md-4 needs-validation" novalidate>
                 <div class="d-flex justify-content-center">
                     <img style="width: 75px;" src="../assets/img/camera.png" class="img-thumbnail " alt="...">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Nome*</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nome do Pet">
+                    <input type="text" class="form-control" minlength="3" maxlength="30" id="validationCustom01"
+                        required placeholder="Nome do Pet">
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor digite um nome válido.
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput">Espécie*</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Espécie do pet">
+                    <input type="text" class="form-control" minlength="3" maxlength="30" id="formGroupExampleInput"
+                        required placeholder="Espécie do pet">
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor digite uma espécie válido.
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Sexo</label> <br>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="1">Macho</option>
-                        <option value="2">Fêmea</option>
-                    </select>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Fêmea
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Macho
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </fieldset>
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Raça</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Raça do Pet">
+                    <input type="text" class="form-control" minlength="3" maxlength="30" id="formGroupExampleInput2"
+                        required placeholder="Raça do Pet">
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor digite uma raça válida.
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Porte</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" required aria-label="Default select example">
                         <option value="1">Pequeno (5 a 10kg)</option>
                         <option value="2">Médio (10 a 25kg)</option>
                         <option value="3">Grande (25 a 45kg)</option>
@@ -66,16 +103,36 @@
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Peso</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Peso do Pet">
+                    <input type="number" class="form-control" minlength="3" maxlength="30" required
+                        id="formGroupExampleInput2" placeholder="Peso do Pet">
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor digite um peso válido.
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Data de Nascimento</label>
-                    <input type="date" class="form-control" id="formGroupExampleInput2"
+                    <input type="date" class="form-control" required id="formGroupExampleInput2"
                         placeholder="Data de nascimento do Pet">
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor digite uma data válida.
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Foto</label>
-                    <input type="file" class="form-control" id="formGroupExampleInput2" placeholder="Foto do Pet">
+                    <input type="file" class="form-control" id="formGroupExampleInput2" required
+                        placeholder="Foto do Pet">
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor selecione uma foto válida.
+                    </div>
                 </div>
 
                 <div class="form-group d-flex justify-content-center">
@@ -84,20 +141,33 @@
             </form>
         </div>
     </main>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
