@@ -22,8 +22,8 @@
 ||Desenvolvedor(a)|
 |-|:-:|
 |<img src="https://avatars.githubusercontent.com/u/25986582?v=4" width="50px">|[Jerson Brito](https://github.com/jersonb)|
-|<img src="https://avatars.githubusercontent.com/u/118688096?v=4" width="50px">|[Renato Mota](https://github.com/jessic4neves)|
-|<img src="https://avatars.githubusercontent.com/u/127262361?v=4" width="50px">|[Thais Vale](https://github.com/renatomotal)|
+|<img src="https://avatars.githubusercontent.com/u/118688096?v=4" width="50px">|[Jessica Neves](https://github.com/jessic4neves)|
+|<img src="https://avatars.githubusercontent.com/u/127262361?v=4" width="50px">|[Renato Mota](https://github.com/renatomotal)|
 |<img src="https://avatars.githubusercontent.com/u/126836029?v=4" width="50px">|[Thais Vale](https://github.com/tthaisvale)|
 
 ## Acompanhe o projeto
